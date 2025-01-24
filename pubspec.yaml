@@ -1,0 +1,63 @@
+name: my_store
+description: "A new Flutter project."
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # State Management
+  flutter_bloc: ^8.1.4
+  # Code generation for immutable classes that has a simple syntax/API (mainly used with Cubit & Retrofit)
+  freezed: ^2.4.7
+  # Annotations for the freezed code-generator.
+  freezed_annotation: ^2.4.1
+  # For Dependency Injection
+  get_it: ^8.0.0
+  # Automatically generate code for converting to and from JSON by annotating Dart classes.
+  json_serializable: ^6.7.1
+  # Annotations for the JSON code-generator.
+  json_annotation: ^4.9.0
+  # A powerful HTTP networking package, supports Interceptors, Aborting and canceling a request, Custom adapters, Transformers, etc.
+  dio: ^5.5.0+1
+  # retrofit.dart is an dio client generator using source_gen and inspired by Chopper and Retrofit.
+  retrofit: ^4.0.3
+  # Retrofit generator is an dio client generator using source_gen and inspired by Chopper and Retrofit.
+  retrofit_generator: ^9.1.2
+  pretty_dio_logger: ^1.4.0
+  # A build system for Dart code generation and modular compilation.
+  build_runner: ^2.4.7
+  # Reading and Writing simple key-value pairs.
+  shared_preferences: ^2.3.2
+  # provides API to store data in secure storage. Keychain is used in iOS, KeyStore based solution is used in Android.
+  flutter_secure_storage: ^9.2.2
+  # Localization
+  easy_localization:
+  intl:
+  flutter_screenutil: ^5.9.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+
+  uses-material-design: true
+
+  fonts:
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo-Medium.ttf
+        - asset: assets/fonts/Cairo-Bold.ttf
+        - asset: assets/fonts/Cairo-ExtraBold.ttf
+        - asset: assets/fonts/Cairo-SemiBold.ttf
+        - asset: assets/fonts/Cairo-Black.ttf
