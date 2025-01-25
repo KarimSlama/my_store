@@ -122,6 +122,13 @@ class TextStyles {
     color: Colors.white,
   );
 
+  static TextStyle font14WhiteMedium = TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeightHelper.medium,
+    fontFamily: 'Cairo',
+    color: Colors.white,
+  );
+
   static TextStyle font14BlueSemiBold = TextStyle(
     fontSize: 14.sp,
     fontFamily: 'Cairo',
@@ -145,7 +152,7 @@ class TextStyles {
       fontSize: 18.sp,
       fontFamily: 'Cairo',
       fontWeight: FontWeightHelper.semiBold,
-      color: AppColors.light);
+      color: AppColors.white);
 
   static TextStyle font18WhiteMedium = TextStyle(
     fontSize: 18.sp,
