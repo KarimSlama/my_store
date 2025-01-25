@@ -21,6 +21,22 @@ class MyStoreApp extends StatelessWidget {
         initialRoute: Routes.splashScreen,
         onGenerateRoute: appRouter.generateRoute,
         theme: themeDark,
+        builder: (context, child) {
+          // Ensure the app respects the RTL layout globally
+          return Directionality(
+            textDirection: TextDirection.rtl,
+            child: child!,
+          );
+        },
+        // localizationsDelegates: [
+        //   // Add Material and Cupertino localization delegates
+        //   GlobalMaterialLocalizations.delegate,
+        //   GlobalWidgetsLocalizations.delegate,
+        //   GlobalCupertinoLocalizations.delegate,
+        // ],
+        // supportedLocales: const [
+        //   Locale('ar', ''), // Arabic locale
+        // ],
       ),
     );
   }
