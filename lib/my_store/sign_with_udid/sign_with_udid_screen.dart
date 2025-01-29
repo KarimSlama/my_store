@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:my_store/core/helpers/extensions.dart';
 import 'package:my_store/core/helpers/spacing.dart';
+import 'package:my_store/core/routing/routes.dart';
 import 'package:my_store/core/theming/app_strings/app_string.dart';
 import 'package:my_store/core/theming/app_themes/text_styles.dart';
 import 'package:my_store/core/widgets/button_widget.dart';
@@ -29,7 +31,9 @@ class SignWithUdidScreen extends StatelessWidget {
             ),
             verticalSpace(20),
             ButtonWidget(
-              onBackPressed: () {},
+              onBackPressed: () {
+                context.pushNamed(Routes.dashboardScreen);
+              },
               btnText: AppString.continueWithUDID,
               width: double.infinity,
             ),

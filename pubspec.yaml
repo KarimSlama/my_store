@@ -33,25 +33,44 @@ dependencies:
   retrofit_generator: ^9.1.2
   pretty_dio_logger: ^1.4.0
   # A build system for Dart code generation and modular compilation.
-  build_runner: ^2.4.7
+  build_runner: ^2.4.14
   # Reading and Writing simple key-value pairs.
   shared_preferences: ^2.3.2
   # provides API to store data in secure storage. Keychain is used in iOS, KeyStore based solution is used in Android.
   flutter_secure_storage: ^9.2.2
   # Localization
   easy_localization:
+  # Sleek, crystal-clear blur bottom navigation bar with dynamic indicator for seamless app navigation.
+  crystal_navigation_bar: ^1.0.2
+  local_hero_transform: ^0.0.3
+  icon_broken: ^1.1.0
   intl:
   flutter_screenutil: ^5.9.3
-
+  # A package which simplifies the task of updating your Flutter app's launcher icon.
+  flutter_launcher_icons: ^0.14.2
+  custom_sliding_segmented_control: ^1.8.5
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+flutter_icons:
+  image_path_android: "assets/icon/icon.png"
+  image_path_ios: "assets/icon/icon.png"
+  adaptive_icon_background: "assets/icon/background.png"
+  adaptive_icon_foreground: "assets/icon/logo.png"
+  android: true # can specify file name here e.g. "ic_launcher"
+  ios: true # can specify file name here e.g. "My-Launcher-Icon"
+
 
   flutter_lints: ^5.0.0
 
 flutter:
 
   uses-material-design: true
+
+  assets:
+  - assets/icon/
+  - assets/images/
 
   fonts:
     - family: Cairo
